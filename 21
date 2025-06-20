@@ -1,0 +1,25 @@
+<?php
+// Array แรก
+$array1 = [
+    "a" => "apple",
+    "b" => "bee",
+    "c" => "cat",
+    "d" => "dog"
+];
+
+// Array ที่สอง
+$array2 = [
+    "a" => "apple",
+    "b" => "boy",
+    "c" => "cat",
+    "d" => "dog"
+];
+
+// Merge array โดย array2 จะทับค่าที่ key ซ้ำใน array1
+$mergedArray = array_merge($array1, $array2);
+
+// แสดงผลลัพธ์
+foreach ($mergedArray as $key => $value) {
+    echo "[$key] : $value<br>";
+}
+?>
